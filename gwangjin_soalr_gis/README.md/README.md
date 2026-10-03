@@ -46,12 +46,12 @@ gwangjin_soalr_gis/
 ---
 
 ## 🛠️ 4. 스크립트별 상세 역할 및 분석 논리
-1) scripts/00_download_network.py
+* **1) scripts/00_download_network.py**
 역할: 광진구 도로 네트워크 GIS 공간 데이터 구축
 
 상세 내용: OSMnx 라이브러리를 활용해 광진구 전역의 실제 도로망 세그먼트(7,328개)를 수집하여 네트워크 분석용 그래프 파일(gwangjin_road_network.graphml)로 정형화.
 
-2) scripts/01_geocoding.py
+* **2) scripts/01_geocoding.py**
 역할: 운영 진단 기반 대상 선별 및 IEA PVPS 연식별 중량 계수(kg/kW) 산출
 
 차등 선별: 광진구 18개 공공시설 중 운영 진단(PR·경제성·자립률) 결과 교체·철거가 필요한 Type C/D 13개소만 필터링 (Type A/B 5개소는 가중치 0t 처리).
@@ -60,7 +60,7 @@ IEA PVPS 적용: 국제에너지기구의 한국 연식별 모듈 중량 계수(
 
 좌표 매칭 후 data/processed/solar_demand_points.csv 저장.
 
-3) scripts/02_location_allocation.py
+* **3) scripts/02_location_allocation.py**
 역할: p-median 입지-배분 최적화 분석 및 Folium 대화형 지도 시각화
 
 p-median 알고리즘: ∑(거리 × 중량) 수치를 최소화하는 최적 입지 탐색.
