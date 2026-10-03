@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_10a5287df7fce174aeb9437e124c38e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_10a5287df7fce174aeb9437e124c38e0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_10a5287df7fce174aeb9437e124c38e0 = L.map(
+                "map_10a5287df7fce174aeb9437e124c38e0",
+                {
+                    center: [37.548, 127.082],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2ddb304b3263af813ce22e1d94d67bb = L.tileLayer(
+                "https://xdworld.vworld.kr/2d/Base/service/{z}/{x}/{y}.png",
+                {"attribution": "VWorld Base Map", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c2ddb304b3263af813ce22e1d94d67bb.addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var circle_marker_6bf71477fe3086b775bfe3722f4c1e06 = L.circleMarker(
+                [37.55418, 127.08051],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_690272ce11a344cebefbfa0e7b8cb91f = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_e42ea31acc7b510b8676d592e2a367cf = $(`<div id="html_e42ea31acc7b510b8676d592e2a367cf" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>능동공영주차장</b></h4>         <b>운영유형:</b> Type A (잉여·공유형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.000 ton</span> (0장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">13.989 km·ton</span>     </div>     </div>`)[0];
+                popup_690272ce11a344cebefbfa0e7b8cb91f.setContent(html_e42ea31acc7b510b8676d592e2a367cf);
+            
+        
+
+        circle_marker_6bf71477fe3086b775bfe3722f4c1e06.bindPopup(popup_690272ce11a344cebefbfa0e7b8cb91f)
+        ;
+
+        
+    
+    
+            var circle_marker_56d2bed9bb1e8f5858fa63dc6dda78e0 = L.circleMarker(
+                [37.56091, 127.09881],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_e39460ecb6be10a2e006b98e31c2dec6 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_9b46004a02961fb8cbc148d0c3a96138 = $(`<div id="html_9b46004a02961fb8cbc148d0c3a96138" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>긴고랑계곡화장실</b></h4>         <b>운영유형:</b> Type A (잉여·공유형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.000 ton</span> (0장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">20.042 km·ton</span>     </div>     </div>`)[0];
+                popup_e39460ecb6be10a2e006b98e31c2dec6.setContent(html_9b46004a02961fb8cbc148d0c3a96138);
+            
+        
+
+        circle_marker_56d2bed9bb1e8f5858fa63dc6dda78e0.bindPopup(popup_e39460ecb6be10a2e006b98e31c2dec6)
+        ;
+
+        
+    
+    
+            var circle_marker_7754fb41370fe959ad1e0a81719e1203 = L.circleMarker(
+                [37.53922, 127.06881],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_3f16943292092c769a94ccd809900c04 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_1292bf1cbcfeac9cdc5a6e0bd54909d9 = $(`<div id="html_1292bf1cbcfeac9cdc5a6e0bd54909d9" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>자양공공힐링센터</b></h4>         <b>운영유형:</b> Type B (정상·모범형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.000 ton</span> (0장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">20.312 km·ton</span>     </div>     </div>`)[0];
+                popup_3f16943292092c769a94ccd809900c04.setContent(html_1292bf1cbcfeac9cdc5a6e0bd54909d9);
+            
+        
+
+        circle_marker_7754fb41370fe959ad1e0a81719e1203.bindPopup(popup_3f16943292092c769a94ccd809900c04)
+        ;
+
+        
+    
+    
+            var circle_marker_dea29515d97e8529af037ef46fb84037 = L.circleMarker(
+                [37.56012, 127.08511],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_1d17533d5300ccb5b3382f7b904186aa = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_c8da776c1973f1aa154fd3e29e40c2b5 = $(`<div id="html_c8da776c1973f1aa154fd3e29e40c2b5" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>중곡1동제2경로당</b></h4>         <b>운영유형:</b> Type B (정상·모범형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.000 ton</span> (0장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">15.621 km·ton</span>     </div>     </div>`)[0];
+                popup_1d17533d5300ccb5b3382f7b904186aa.setContent(html_c8da776c1973f1aa154fd3e29e40c2b5);
+            
+        
+
+        circle_marker_dea29515d97e8529af037ef46fb84037.bindPopup(popup_1d17533d5300ccb5b3382f7b904186aa)
+        ;
+
+        
+    
+    
+            var circle_marker_3278d654351b07cec85d249e6f43ca51 = L.circleMarker(
+                [37.53012, 127.07012],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_59a1518fb1850ae7a3e4525cf2406876 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_8b9c1167ec686cc50640be5287e210a9 = $(`<div id="html_8b9c1167ec686cc50640be5287e210a9" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>자양3동주민센터</b></h4>         <b>운영유형:</b> Type B (정상·모범형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.000 ton</span> (0장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">25.184 km·ton</span>     </div>     </div>`)[0];
+                popup_59a1518fb1850ae7a3e4525cf2406876.setContent(html_8b9c1167ec686cc50640be5287e210a9);
+            
+        
+
+        circle_marker_3278d654351b07cec85d249e6f43ca51.bindPopup(popup_59a1518fb1850ae7a3e4525cf2406876)
+        ;
+
+        
+    
+    
+            var circle_marker_3e52b29248baf5f133fa853e1dc26635 = L.circleMarker(
+                [37.53697, 127.08432],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.464, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_9938d00eeda85c314ed4f500ff083ff5 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_470a7836220b0c749193e3e604d364a6 = $(`<div id="html_470a7836220b0c749193e3e604d364a6" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>중앙어린이집</b></h4>         <b>운영유형:</b> Type C (용량 부족형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.366 ton</span> (15장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">17.563 km·ton</span>     </div>     </div>`)[0];
+                popup_9938d00eeda85c314ed4f500ff083ff5.setContent(html_470a7836220b0c749193e3e604d364a6);
+            
+        
+
+        circle_marker_3e52b29248baf5f133fa853e1dc26635.bindPopup(popup_9938d00eeda85c314ed4f500ff083ff5)
+        ;
+
+        
+    
+    
+            var circle_marker_2e013081646e48a69403eaeb1194c85b = L.circleMarker(
+                [37.54589, 127.07095],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.932, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_3baecbfd2ed8590c0a58ea8f5e38d771 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_c8041e423a83da753938743fe9102037 = $(`<div id="html_c8041e423a83da753938743fe9102037" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>화양동주민센터</b></h4>         <b>운영유형:</b> Type C (용량 부족형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.733 ton</span> (30장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">17.097 km·ton</span>     </div>     </div>`)[0];
+                popup_3baecbfd2ed8590c0a58ea8f5e38d771.setContent(html_c8041e423a83da753938743fe9102037);
+            
+        
+
+        circle_marker_2e013081646e48a69403eaeb1194c85b.bindPopup(popup_3baecbfd2ed8590c0a58ea8f5e38d771)
+        ;
+
+        
+    
+    
+            var circle_marker_8eecf7b329cfa2f3d1d7ad89c76cd15f = L.circleMarker(
+                [37.57218, 127.08638],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.812, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_bb8f2c1e6b8b847aabbe0e45b61808bd = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_f552e73ed1a7f25e52cc344956ad3e06 = $(`<div id="html_f552e73ed1a7f25e52cc344956ad3e06" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>중곡동다목적체육센터</b></h4>         <b>운영유형:</b> Type C (용량 부족형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.953 ton</span> (39장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">23.657 km·ton</span>     </div>     </div>`)[0];
+                popup_bb8f2c1e6b8b847aabbe0e45b61808bd.setContent(html_f552e73ed1a7f25e52cc344956ad3e06);
+            
+        
+
+        circle_marker_8eecf7b329cfa2f3d1d7ad89c76cd15f.bindPopup(popup_bb8f2c1e6b8b847aabbe0e45b61808bd)
+        ;
+
+        
+    
+    
+            var circle_marker_645910c391acd664398dfd8b2ae4c16f = L.circleMarker(
+                [37.53281, 127.06584],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.932, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_0e0e008ad17a3eeb9b746e066b33a723 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_abad980eaf1eab4e9777c3fed5a2c23a = $(`<div id="html_abad980eaf1eab4e9777c3fed5a2c23a" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>자양4빗물펌프장</b></h4>         <b>운영유형:</b> Type C (용량 부족형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.733 ton</span> (30장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">24.887 km·ton</span>     </div>     </div>`)[0];
+                popup_0e0e008ad17a3eeb9b746e066b33a723.setContent(html_abad980eaf1eab4e9777c3fed5a2c23a);
+            
+        
+
+        circle_marker_645910c391acd664398dfd8b2ae4c16f.bindPopup(popup_0e0e008ad17a3eeb9b746e066b33a723)
+        ;
+
+        
+    
+    
+            var circle_marker_57ef2e67d84839cf5f5c6eca2faf63a0 = L.circleMarker(
+                [37.55831, 127.09012],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.864, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_a524be7a3a416694a3f6deabfac52def = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_1ec97ccc1c304c96404f0a9b08c06323 = $(`<div id="html_1ec97ccc1c304c96404f0a9b08c06323" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>중곡4동주민센터</b></h4>         <b>운영유형:</b> Type C (용량 부족형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">1.466 ton</span> (60장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">14.955 km·ton</span>     </div>     </div>`)[0];
+                popup_a524be7a3a416694a3f6deabfac52def.setContent(html_1ec97ccc1c304c96404f0a9b08c06323);
+            
+        
+
+        circle_marker_57ef2e67d84839cf5f5c6eca2faf63a0.bindPopup(popup_a524be7a3a416694a3f6deabfac52def)
+        ;
+
+        
+    
+    
+            var circle_marker_6a6b5c1c0b0144c61ef442006625b2f3 = L.circleMarker(
+                [37.56491, 127.08272],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.776, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_0bf6cb5a83c48218ef8ae56e1c2085b9 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_cb90bdd9a0a0a19bb7b9888130bcad8b = $(`<div id="html_cb90bdd9a0a0a19bb7b9888130bcad8b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>중곡1동어린이집</b></h4>         <b>운영유형:</b> Type C (용량 부족형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.444 ton</span> (15장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">18.449 km·ton</span>     </div>     </div>`)[0];
+                popup_0bf6cb5a83c48218ef8ae56e1c2085b9.setContent(html_cb90bdd9a0a0a19bb7b9888130bcad8b);
+            
+        
+
+        circle_marker_6a6b5c1c0b0144c61ef442006625b2f3.bindPopup(popup_0bf6cb5a83c48218ef8ae56e1c2085b9)
+        ;
+
+        
+    
+    
+            var circle_marker_85ad7513711f0a65e8d810177db96ab5 = L.circleMarker(
+                [37.53092, 127.07721],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.640000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_0dcd4b53d9a60417cf2e56f86ee09faf = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_e05d52c6912403999100889b5787ce7c = $(`<div id="html_e05d52c6912403999100889b5787ce7c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>자양종합사회복지관</b></h4>         <b>운영유형:</b> Type D (고장·폐기형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.660 ton</span> (27장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">22.522 km·ton</span>     </div>     </div>`)[0];
+                popup_0dcd4b53d9a60417cf2e56f86ee09faf.setContent(html_e05d52c6912403999100889b5787ce7c);
+            
+        
+
+        circle_marker_85ad7513711f0a65e8d810177db96ab5.bindPopup(popup_0dcd4b53d9a60417cf2e56f86ee09faf)
+        ;
+
+        
+    
+    
+            var circle_marker_ba978d07d91710071cede48912f83fc4 = L.circleMarker(
+                [37.54712, 127.10212],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.88, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_44fe85b0608656de371c9a99e576432a = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_b36ca6088c087f49a700066198b111c7 = $(`<div id="html_b36ca6088c087f49a700066198b111c7" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>광장제1경로당</b></h4>         <b>운영유형:</b> Type D (고장·폐기형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.220 ton</span> (9장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">19.851 km·ton</span>     </div>     </div>`)[0];
+                popup_44fe85b0608656de371c9a99e576432a.setContent(html_b36ca6088c087f49a700066198b111c7);
+            
+        
+
+        circle_marker_ba978d07d91710071cede48912f83fc4.bindPopup(popup_44fe85b0608656de371c9a99e576432a)
+        ;
+
+        
+    
+    
+            var circle_marker_39299a03f104d18448c8844ab90ccaa7 = L.circleMarker(
+                [37.5539, 127.08182],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.776, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_6886c0cacca21bebac604c94b13a4a53 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_a7be1520bfb4d95782f2704f3a6d80a6 = $(`<div id="html_a7be1520bfb4d95782f2704f3a6d80a6" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>능동경로당</b></h4>         <b>운영유형:</b> Type D (고장·폐기형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.444 ton</span> (15장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">13.672 km·ton</span>     </div>     </div>`)[0];
+                popup_6886c0cacca21bebac604c94b13a4a53.setContent(html_a7be1520bfb4d95782f2704f3a6d80a6);
+            
+        
+
+        circle_marker_39299a03f104d18448c8844ab90ccaa7.bindPopup(popup_6886c0cacca21bebac604c94b13a4a53)
+        ;
+
+        
+    
+    
+            var circle_marker_865851ed107f624fc5801dd9901ae271 = L.circleMarker(
+                [37.54891, 127.10451],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.88, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_b936e259c2451049f775986152342017 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_8ad9e945084df9ced9f0d850f5ebf019 = $(`<div id="html_8ad9e945084df9ced9f0d850f5ebf019" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>광장제2경로당</b></h4>         <b>운영유형:</b> Type D (고장·폐기형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.220 ton</span> (9장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">21.156 km·ton</span>     </div>     </div>`)[0];
+                popup_b936e259c2451049f775986152342017.setContent(html_8ad9e945084df9ced9f0d850f5ebf019);
+            
+        
+
+        circle_marker_865851ed107f624fc5801dd9901ae271.bindPopup(popup_b936e259c2451049f775986152342017)
+        ;
+
+        
+    
+    
+            var circle_marker_9d5a75105e520cb276bd34c42316c61e = L.circleMarker(
+                [37.56832, 127.08845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.776, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_d950164bfbacf8902482c159e9061f63 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_d0c71b28488532de42f15884b3fb3c86 = $(`<div id="html_d0c71b28488532de42f15884b3fb3c86" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>중곡종합사회복지관</b></h4>         <b>운영유형:</b> Type D (고장·폐기형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.444 ton</span> (15장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">20.780 km·ton</span>     </div>     </div>`)[0];
+                popup_d950164bfbacf8902482c159e9061f63.setContent(html_d0c71b28488532de42f15884b3fb3c86);
+            
+        
+
+        circle_marker_9d5a75105e520cb276bd34c42316c61e.bindPopup(popup_d950164bfbacf8902482c159e9061f63)
+        ;
+
+        
+    
+    
+            var circle_marker_5039ec771d968c740ebb0cd1c14603d4 = L.circleMarker(
+                [37.55418, 127.08051],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.464, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_703ba6435960eb5dbf88dbdf8a5c80c0 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_3be787bd35687f0f8ab1bf29525d739c = $(`<div id="html_3be787bd35687f0f8ab1bf29525d739c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>능동주민센터</b></h4>         <b>운영유형:</b> Type D (고장·폐기형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">0.366 ton</span> (15장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">13.989 km·ton</span>     </div>     </div>`)[0];
+                popup_703ba6435960eb5dbf88dbdf8a5c80c0.setContent(html_3be787bd35687f0f8ab1bf29525d739c);
+            
+        
+
+        circle_marker_5039ec771d968c740ebb0cd1c14603d4.bindPopup(popup_703ba6435960eb5dbf88dbdf8a5c80c0)
+        ;
+
+        
+    
+    
+            var circle_marker_d0d99d49f0484b24352834acf96a5040 = L.circleMarker(
+                [37.54391, 127.08691],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.384, "stroke": true, "weight": 3}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+        var popup_d78ffe2a939a352399f542e6264d98f9 = L.popup({"maxWidth": 270, "minWidth": 250});
+
+        
+            
+                var html_ec873a487055974f6d548093af4a8ffd = $(`<div id="html_ec873a487055974f6d548093af4a8ffd" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">         <h4 style="margin: 0 0 8px 0; color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 4px;"><b>구의1동주민센터</b></h4>         <b>운영유형:</b> Type D (고장·폐기형)<br>         <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">2.346 ton</span> (96장)<br>         <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">13.383 km·ton</span>     </div>     </div>`)[0];
+                popup_d78ffe2a939a352399f542e6264d98f9.setContent(html_ec873a487055974f6d548093af4a8ffd);
+            
+        
+
+        circle_marker_d0d99d49f0484b24352834acf96a5040.bindPopup(popup_d78ffe2a939a352399f542e6264d98f9)
+        ;
+
+        
+    
+    
+            var marker_d6a81628af57ad02c1eac594e2a0a49e = L.marker(
+                [37.54391, 127.08691],
+                {}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var icon_7792bdb7346a436e34babc8103c48c4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d6a81628af57ad02c1eac594e2a0a49e.setIcon(icon_7792bdb7346a436e34babc8103c48c4c);
+        
+    
+        var popup_75f6f015f29053ccb78dc4954b40bcba = L.popup({"maxWidth": 290, "minWidth": 270});
+
+        
+            
+                var html_ac41114c0a98ad957a25f9ffef45c270 = $(`<div id="html_ac41114c0a98ad957a25f9ffef45c270" style="width: 100.0%; height: 100.0%;"> <div style="width: 270px; font-family: 'Malgun Gothic', sans-serif; font-size: 13px; line-height: 1.6;">     <h4 style="margin: 0 0 8px 0; color: #2980B9; border-bottom: 2px solid #2980B9; padding-bottom: 4px;"><b>[이론적 최적지 1위] 구의1동주민센터</b></h4>     <b>운영유형:</b> Type D (고장·폐기형)<br>     <b>예상 중량:</b> <span style="color: #E74C3C; font-weight: bold;">2.346 ton</span> (96장 / 총 9.395 ton 수거 집하)<br>     <b>총 물류운송부하:</b> <span style="color: #2980B9; font-weight: bold;">13.383 km·ton</span> (18개 시설 중 최소) </div> </div>`)[0];
+                popup_75f6f015f29053ccb78dc4954b40bcba.setContent(html_ac41114c0a98ad957a25f9ffef45c270);
+            
+        
+
+        marker_d6a81628af57ad02c1eac594e2a0a49e.bindPopup(popup_75f6f015f29053ccb78dc4954b40bcba)
+        ;
+
+        
+    
+    
+            var poly_line_655d3fe75e5c6718e2f6b0cc4d35e057 = L.polyline(
+                [[37.53697, 127.08432], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_4e82f5342da25b8788bed6d59bf066e3 = L.polyline(
+                [[37.54589, 127.07095], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_e3d926cef507e75c96f36e8eefcd6df2 = L.polyline(
+                [[37.57218, 127.08638], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_8f46c05eb42313632c5f1d744ec36b54 = L.polyline(
+                [[37.53281, 127.06584], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_802385d7389da7cbb74414d2c8082982 = L.polyline(
+                [[37.55831, 127.09012], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_cc4fa57018ba41ec69b24f2dc83eb64d = L.polyline(
+                [[37.56491, 127.08272], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_4857df48917c41211acfba354c8180a8 = L.polyline(
+                [[37.53092, 127.07721], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_e43ecf1e496ba2e333cc44cc05364b0d = L.polyline(
+                [[37.54712, 127.10212], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_e1bdd339efa61e27be1c0d87535eb925 = L.polyline(
+                [[37.5539, 127.08182], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_192c1dabc46f9d6d0c85163642915676 = L.polyline(
+                [[37.54891, 127.10451], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_1e71e2b0cf14cffc70abd51ac6efbdaf = L.polyline(
+                [[37.56832, 127.08845], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+    
+            var poly_line_0098beb22d6f4b950d3bbaeed837b6f4 = L.polyline(
+                [[37.55418, 127.08051], [37.54391, 127.08691]],
+                {"bubblingMouseEvents": true, "color": "#2B5B84", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#2B5B84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_10a5287df7fce174aeb9437e124c38e0);
+        
+</script>
+</html>
