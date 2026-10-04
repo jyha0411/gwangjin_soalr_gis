@@ -1,6 +1,10 @@
 # ☀️ 광진구 노후 공공 태양광 폐패널 최적 수거 거점 선정 GIS 입지-배분 모델
 > **Capstone Design 1 Project** | IEA PVPS 연식별 중량 계수 및 p-median 모델을 활용한 탄소중립 수거 물류 체계 구축
 
+> **🗺️ 대화형 GIS 지도 라이브 데모**
+> * 📍 [시나리오 A] 이론적 최적지 지도 (구의1동주민센터): [웹 지도 열기](https://jyha0411.github.io/gwangjin_solar_gis/gwangjin_solar_gis/gis/gwangjin_scenario_a_map.html)
+> * 📍 [시나리오 B] 현실적 최적 거점 지도 (능동공영주차장): [웹 지도 열기](https://jyha0411.github.io/gwangjin_solar_gis/gwangjin_solar_gis/gis/gwangjin_scenario_b_map.html)
+
 본 프로젝트는 광진구 공공 태양광 발전시설의 운영 상태 진단(PR·경제성·자립률)을 바탕으로 교체·폐기 대상 시설을 선별하고, IEA PVPS 연식별 중량 계수 기반의 폐패널 발생 물량(ton)을 가중치로 활용하여 물류 운송 부하(km·ton)를 최소화하는 최적의 수거 거점을 도출하는 GIS 데이터 분석 연구이다.
 
 ---
